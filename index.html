@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.svg" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Geleon</title>
+  </head>
+  <body class="font-montserrat font-medium">
+    <!-- header ====================================================================================-->
+    <header class="flex min-h-[121px] items-center bg-black/80">
+      <div class="container flex items-center justify-between gap-4">
+        <!-- logo ====================================================================================-->
+        <div class="logo">
+          <img src="./assets/logo.png" alt="логотип компании" />
+        </div>
+        <!-- nav ====================================================================================-->
+        <nav>
+          <ul class="flex items-center gap-10 text-white">
+            <li class="cursor-pointer duration-300 ease-in-out hover:text-blue">
+              <a class="py-1" href="#">Оборудование</a>
+            </li>
+            <li class="cursor-pointer duration-300 ease-in-out hover:text-blue">
+              <a class="py-1" href="#brands">Бренды</a>
+            </li>
+            <li class="cursor-pointer duration-300 ease-in-out hover:text-blue">
+              <a class="py-1" href="#about">О нас</a>
+            </li>
+            <li class="cursor-pointer duration-300 ease-in-out hover:text-blue">
+              <a class="py-1" href="#">Виды оборудования</a>
+            </li>
+            <li class="cursor-pointer duration-300 ease-in-out hover:text-blue">
+              <a class="py-1" href="#reviews">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- phone ====================================================================================-->
+        <div
+          class="group/edit flex items-center gap-[13px] text-white duration-300 ease-in-out"
+        >
+          <svg
+            class="group-hover/edit:fill-darkBlue duration-300 ease-in-out"
+            width="38"
+            height="37"
+            viewBox="0 0 38 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="phone">
+              <g id="Black">
+                <path
+                  class="group-hover/edit:fill-darkBlue duration-300 ease-in-out"
+                  id="Vector"
+                  d="M12.909 0.557255C12.6983 0.648716 10.2325 2.08714 10.0755 2.2077C9.77399 2.44467 9.60051 2.96849 9.70377 3.35096C9.74921 3.52973 9.81942 3.64613 12.8016 8.85523C14.7594 12.2767 14.809 12.3474 15.2014 12.4679C15.4533 12.5428 15.7879 12.5344 15.9944 12.4388C16.1596 12.364 17.2542 11.7404 18.3488 11.0919C18.9312 10.751 19.1253 10.5223 19.1914 10.1107C19.2492 9.75321 19.1914 9.61602 18.4892 8.38961C15.7549 3.6004 14.2266 0.956356 14.1151 0.835794C13.9127 0.619615 13.6194 0.499053 13.3014 0.499053C13.1527 0.50321 12.9751 0.528154 12.909 0.557255Z"
+                  fill="#34B2DB"
+                />
+                <path
+                  class="group-hover/edit:fill-darkBlue duration-300 ease-in-out"
+                  id="Vector_2"
+                  d="M8.2823 4.21555C7.53882 4.67286 7.16295 4.94308 6.68382 5.35465C5.51904 6.36072 4.99447 7.51229 4.92839 9.20848C4.7136 14.8624 8.6086 23.9835 14.0608 30.5978C16.1053 33.0797 18.344 35.0877 20.3019 36.1977C21.1238 36.6675 21.9871 36.9418 22.776 36.9834C23.9697 37.0499 25.0643 36.7215 26.7371 35.7861L27.1832 35.5367L27.084 35.3621C27.0303 35.2706 26.3901 34.1523 25.6632 32.8843C24.9362 31.6163 23.854 29.7248 23.2551 28.6854C22.6603 27.6461 22.1606 26.7814 22.144 26.7606C22.1275 26.744 21.9871 26.7856 21.8343 26.8562C21.3427 27.0807 20.9173 27.1597 20.3019 27.1348C19.7443 27.114 19.4923 27.0558 18.9553 26.8396C16.8323 25.9832 14.5564 23.2726 13.3008 20.1006C12.2806 17.5189 12.1484 15.1784 12.9456 13.7441C13.1273 13.4157 13.5569 12.9417 13.8419 12.7547C13.9534 12.684 14.036 12.6133 14.0277 12.6008C13.9864 12.5302 11.2108 7.68274 10.1906 5.90342C9.54208 4.77263 8.98447 3.8414 8.95556 3.83724C8.92665 3.83308 8.62513 4.00353 8.2823 4.21555Z"
+                  fill="#34B2DB"
+                />
+                <path
+                  class="group-hover/edit:fill-darkBlue duration-300 ease-in-out"
+                  id="Vector_3"
+                  d="M26.0842 23.235C25.919 23.2766 25.952 23.26 24.4527 24.1247C23.6555 24.5903 23.0938 24.9395 23.0029 25.0393C22.9161 25.1266 22.8211 25.2846 22.784 25.3885C22.7014 25.6255 22.6972 26.0204 22.7716 26.2034C22.8046 26.2782 23.4572 27.4298 24.2255 28.7684C24.9938 30.1071 26.0759 31.9945 26.6294 32.9673C27.187 33.9401 27.7116 34.8048 27.7942 34.8921C28.104 35.2247 28.5748 35.337 28.9755 35.1831C29.2564 35.0709 31.7553 33.6117 31.8998 33.4745C32.094 33.2874 32.2179 32.9839 32.2179 32.6971C32.2179 32.5557 32.1972 32.377 32.1683 32.298C32.1435 32.219 31.5694 31.1921 30.8961 30.0156C30.2188 28.8391 29.1242 26.9309 28.4633 25.7752C27.1581 23.497 27.092 23.4013 26.6831 23.2683C26.4559 23.1935 26.2907 23.1852 26.0842 23.235Z"
+                  fill="#34B2DB"
+                />
+              </g>
+            </g>
+          </svg>
+
+          <a
+            class="duration-300 ease-in-out group-hover/edit:text-blue"
+            href="tel:+380939010108"
+            >+38(093) 901 01 08</a
+          >
+        </div>
+        <!-- burger menu ============================================================================= -->
+        <div
+          id="burger"
+          class="group relative h-[30px] w-[43px] cursor-pointer lg:hidden"
+        >
+          <span
+            class="absolute left-0 top-0 block h-2 w-full rounded-lg bg-white transition-transform group-[.active]:translate-y-[9px] group-[.active]:rotate-45"
+          ></span>
+          <span
+            class="absolute left-0 top-1/2 block h-2 w-full -translate-y-1/2 rounded-lg bg-white transition-opacity group-[.active]:opacity-0"
+          ></span>
+          <span
+            class="absolute bottom-0 left-0 block h-2 w-full rounded-lg bg-white transition-transform group-[.active]:-translate-y-[10px] group-[.active]:-rotate-45"
+          ></span>
+        </div>
+      </div>
+    </header>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
