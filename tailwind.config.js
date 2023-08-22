@@ -3,7 +3,7 @@ module.exports = {
   content: ["./*.html"],
   theme: {
     container: {
-      padding: "15px",
+      padding: "10px",
       center: true,
     },
     extend: {
@@ -20,13 +20,13 @@ module.exports = {
         grey: "#CBCACA",
       },
       screens: {
-        sm: "510px",
-        md: "798px",
-        lg: "1054px",
-        xl: "1310px",
-        "2xl": "1470px",
-        "3xl": "1566px",
-        "4xl": "1694px",
+        sm: "500px",
+        md: "788px",
+        lg: "1044px",
+        xl: "1300px",
+        "2xl": "1460px",
+        "3xl": "1556px",
+        "4xl": "1684px",
       },
       keyframes: {
         "fade-in": {

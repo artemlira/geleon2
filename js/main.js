@@ -9,23 +9,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     burger.addEventListener("click", () => {
       burger.classList.toggle("active");
-      menu.classList.toggle("hidden");
-      menu.classList.toggle("block");
+      menu.classList.toggle("active");
+      // menu.classList.toggle("hidden");
+      // menu.classList.toggle("block");
       body.classList.toggle("overflow-hidden");
     });
 
     menu.addEventListener("click", () => {
-      menu.classList.add("hidden");
-      menu.classList.remove("block");
+      // menu.classList.add("hidden");
+      // menu.classList.remove("block");
       burger.classList.remove("active");
+      menu.classList.remove("active");
       body.classList.remove("overflow-hidden");
     });
 
     window.addEventListener("resize", () => {
-      if (window.innerWidth > 1024) {
-        menu.classList.add("hidden");
-        menu.classList.remove("block");
+      if (window.innerWidth > 1300) {
+        // menu.classList.add("hidden");
+        // menu.classList.remove("block");
         burger.classList.remove("active");
+        menu.classList.remove("active");
         body.classList.remove("overflow-hidden");
       }
     });
