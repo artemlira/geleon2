@@ -42,11 +42,15 @@
 
 @layer components {
   .title {
-    @apply font-melancholy text-[21px] font-bold md:text-[28px] lg:text-[32px] xl:text-[40px] 2xl:text-[60px] 4xl:text-[80px];
+    @apply text-center font-melancholy text-[21px] font-bold md:text-[28px] lg:text-[41px] xl:text-[54px] 2xl:text-[67px] 4xl:text-[80px];
   }
 
   .subtitle {
-    @apply text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[35px];
+    @apply text-center text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[35px];
+  }
+
+  .text {
+    @apply text-center text-base md:text-[17px] lg:text-[19px] xl:text-[21px] 2xl:text-[23px] 4xl:text-[25px];
   }
 
   .text-nav {
@@ -54,7 +58,7 @@
   }
 
   .btn {
-    @apply min-w-[279px] rounded-[15px] bg-blue px-[20px] pb-[18px] pt-[17px] text-base font-semibold text-white duration-300 ease-in-out hover:bg-darkBlue md:min-w-[559px] md:text-lg lg:text-xl xl:text-2xl 2xl:p-[31px] 2xl:text-[28px] 4xl:text-[35px];
+    @apply min-w-[279px] rounded-[15px] bg-blue px-[20px] pb-[18px] pt-[17px] text-center text-base font-semibold text-white duration-300 ease-in-out hover:bg-darkBlue md:min-w-[559px] md:text-lg lg:text-xl xl:text-2xl 2xl:p-[31px] 2xl:text-[28px] 4xl:text-[35px];
   }
 
   .equipment-text {
@@ -74,6 +78,10 @@
   }
 
   .image {
-    @apply h-auto w-full max-w-full object-contain object-center;
+    @apply h-auto max-w-full object-contain object-center;
+  }
+
+  .swiper-pagination span {
+    @apply relative h-[12px] w-[12px] bg-black before:absolute before:left-1/2 before:top-1/2 before:block before:h-[23px] before:w-[23px] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full before:border before:border-black before:content-[''];
   }
 }

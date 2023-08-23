@@ -10,14 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
     burger.addEventListener("click", () => {
       burger.classList.toggle("active");
       menu.classList.toggle("active");
-      // menu.classList.toggle("hidden");
-      // menu.classList.toggle("block");
       body.classList.toggle("overflow-hidden");
     });
 
     menu.addEventListener("click", () => {
-      // menu.classList.add("hidden");
-      // menu.classList.remove("block");
       burger.classList.remove("active");
       menu.classList.remove("active");
       body.classList.remove("overflow-hidden");
@@ -25,8 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("resize", () => {
       if (window.innerWidth > 1300) {
-        // menu.classList.add("hidden");
-        // menu.classList.remove("block");
         burger.classList.remove("active");
         menu.classList.remove("active");
         body.classList.remove("overflow-hidden");
@@ -37,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleMenu();
 
   // Swiper slider
-  const swiper = new Swiper(".swiper", {
+  const brandSwiper = new Swiper(".brands-slider", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -47,6 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
     // autoplay: {
     //   delay: 1800,
