@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
       el: ".swiper-pagination",
       clickable: true,
     },
-    // autoplay: {
-    //   delay: 1800,
-    // }
+    autoplay: {
+      delay: 1800,
+    },
   });
 
   // send message
