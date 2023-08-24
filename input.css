@@ -70,7 +70,7 @@
   }
 
   .equipment-btn {
-    @apply min-w-[308px] rounded-[15px] bg-blue px-5 pb-[21px] pt-5 text-center text-[20px] text-white duration-300 ease-in-out hover:bg-darkBlue xl:pb-[17px] xl:pt-[18px] lg:text-[25px];
+    @apply min-w-[308px] rounded-[15px] bg-blue px-5 pb-[21px] pt-5 text-center text-[20px] text-white duration-300 ease-in-out hover:bg-darkBlue lg:text-[25px] xl:pb-[17px] xl:pt-[18px];
   }
 
   .status {
@@ -83,5 +83,22 @@
 
   .swiper-pagination span {
     @apply relative h-[12px] w-[12px] bg-black before:absolute before:left-1/2 before:top-1/2 before:block before:h-[23px] before:w-[23px] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full before:border before:border-black before:content-[''];
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    @apply content-[''];
+  }
+
+  .swiper-button-next {
+    @apply right-0 top-1/2 h-2 w-3 bg-[url('/assets/next.svg')] bg-cover bg-center bg-no-repeat md:h-[35px] md:w-[53px];
+  }
+
+  .swiper-button-prev {
+    @apply left-0 h-2 w-3 bg-[url('/assets/prew.svg')] bg-cover bg-center bg-no-repeat md:h-[35px] md:w-[53px];
+  }
+
+  .about-right {
+    @apply bg-[right_bottom_338px] bg-no-repeat xl:bg-[url('/assets/bg-equipment.png')] xl:bg-[length:325px_248px] 3xl:bg-[length:405px_328px] 4xl:bg-[length:485px_408px];
   }
 }

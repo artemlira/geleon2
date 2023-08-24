@@ -10,20 +10,20 @@ document.addEventListener("DOMContentLoaded", function () {
     burger.addEventListener("click", () => {
       burger.classList.toggle("active");
       menu.classList.toggle("active");
-      body.classList.toggle("overflow-hidden");
+      body.classList.toggle("overflow-clip");
     });
 
     menu.addEventListener("click", () => {
       burger.classList.remove("active");
       menu.classList.remove("active");
-      body.classList.remove("overflow-hidden");
+      body.classList.remove("overflow-clip");
     });
 
     window.addEventListener("resize", () => {
       if (window.innerWidth > 1300) {
         burger.classList.remove("active");
         menu.classList.remove("active");
-        body.classList.remove("overflow-hidden");
+        body.classList.remove("overflow-clip");
       }
     });
   }
@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
     spaceBetween: 80,
     speed: 1000,
+    passiveListeners: true,
     // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",
@@ -49,6 +50,94 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     autoplay: {
       delay: 1800,
+    },
+  });
+
+  const aboutSwiper = new Swiper(".about-slider", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    spaceBetween: 30,
+    speed: 1000,
+    passiveListeners: true,
+    slidesPerView: 3,
+    breakpoints: {
+      460: {
+        spaceBetween: 40,
+      },
+      788: {
+        spaceBetween: 60,
+      },
+      1044: {
+        spaceBetween: 80,
+      },
+      1300: {
+        spaceBetween: 100,
+      },
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // autoplay: {
+    //   delay: 1800,
+    // },
+  });
+
+  const reviewsSwiper = new Swiper(".reviews-swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    spaceBetween: 80,
+    speed: 1000,
+    passiveListeners: true,
+    slidesPerView: 1,
+    breakpoints: {
+      788: {
+        slidesPerView: 2,
+      },
+      1280: {
+        slidesPerView: 3,
+      },
+    },
+    // If we need pagination
+    pagination: {
+      el: ".reviews-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 1800,
+    },
+  });
+
+  const clientsSwiper = new Swiper(".clients-swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    spaceBetween: 30,
+    speed: 1000,
+    passiveListeners: true,
+    slidesPerView: 3,
+    breakpoints: {
+      460: {
+        spaceBetween: 40,
+      },
+      788: {
+        slidesPerView: 4,
+        spaceBetween: 60,
+      },
+      1044: {
+        spaceBetween: 80,
+      },
+      1300: {
+        spaceBetween: 100,
+      },
+    },
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
   });
 
