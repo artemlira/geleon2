@@ -78,7 +78,7 @@
   }
 
   .image {
-    @apply h-auto max-h-full max-w-full object-contain object-center;
+    @apply h-auto max-h-full w-full max-w-full object-contain object-center;
   }
 
   .swiper-pagination span {
