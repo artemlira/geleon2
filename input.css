@@ -58,7 +58,7 @@
   }
 
   .btn {
-    @apply min-w-[279px] rounded-[15px] bg-blue px-[20px] pb-[18px] pt-[17px] text-center text-base font-semibold text-white duration-300 ease-in-out hover:bg-darkBlue md:min-w-[559px] md:text-lg lg:text-xl xl:text-2xl 2xl:p-[31px] 2xl:text-[28px] 4xl:text-[35px];
+    @apply min-w-[279px] rounded-[15px] bg-blue px-[16px] pb-[18px] pt-[17px] text-center text-xl font-bold text-white duration-300 ease-in-out hover:bg-darkBlue md:min-w-[559px] xl:text-2xl 2xl:p-[31px] 2xl:text-[28px] 4xl:text-[35px];
   }
 
   .equipment-text {
@@ -70,7 +70,11 @@
   }
 
   .equipment-btn {
-    @apply min-w-[308px] rounded-[15px] bg-blue px-5 pb-[21px] pt-5 text-center text-[20px] text-white duration-300 ease-in-out hover:bg-darkBlue lg:text-[25px] xl:pb-[17px] xl:pt-[18px];
+    @apply min-w-[308px] rounded-[15px] bg-blue px-5 pb-[21px] pt-5 text-center text-[20px] font-bold text-white duration-300 ease-in-out hover:bg-darkBlue lg:text-[25px] xl:pb-[17px] xl:pt-[18px];
+  }
+
+  .equipment-img {
+    @apply h-[66px] w-[66px] md:h-[80px] md:w-[80px] lg:h-[94px] lg:w-[94px] xl:h-[108px] xl:w-[108px] 2xl:h-[122px] 2xl:w-[122px] 4xl:h-[138px] 4xl:w-[138px];
   }
 
   .status {
@@ -78,7 +82,7 @@
   }
 
   .image {
-    @apply h-auto max-h-full w-full max-w-full object-contain object-center;
+    @apply h-full max-h-full w-full max-w-full object-contain object-center;
   }
 
   .swiper-pagination span {
